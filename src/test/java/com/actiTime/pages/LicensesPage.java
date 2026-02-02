@@ -7,15 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.actiTime.generic.BasePage;
 
-public class EnterTimetrackPage extends BasePage {
+public class LicensesPage extends BasePage {
 
-	@FindBy(className = "pages-navigation-Popups-ProfilePopup-buttonsGroup--dKHJND4D")
+	@FindBy(xpath= "(//div[@class='pages-navigation-Popups-ProfilePopup-buttonsGroup--dKHJND4D'])[1]")
 	private WebElement avatar;
 
 	@FindBy(xpath = "//div[.='Logout']")
 	private WebElement logoutbtn;
 
-	public EnterTimetrackPage(WebDriver driver) {
+	public LicensesPage(WebDriver driver) {
 		super(driver);
 
 		PageFactory.initElements(driver, this);

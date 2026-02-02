@@ -18,7 +18,7 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//div[.='Login ']")
 	private WebElement loginbtn;
 
-	@FindBy(xpath = "//nobr[.='actiTIME 2026 Online']")
+	@FindBy(xpath = "//nobr[.='actiTIME 2026']")
 	private WebElement version;
 
 	@FindBy(xpath = "//span[.='Username or Password is invalid. Please try again.']")

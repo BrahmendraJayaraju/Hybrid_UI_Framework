@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.actiTime.generic.BaseTest;
 import getdata.ExceldataFramework;
-import com.actiTime.pages.EnterTimetrackPage;
+import com.actiTime.pages.LicensesPage;
 import com.actiTime.pages.LoginPage;
 
 public class validLoginLogoutTest extends BaseTest {
@@ -19,13 +19,13 @@ public class validLoginLogoutTest extends BaseTest {
 
 		String pass = ExceldataFramework.getdata(filepath, "Login", 1, 1);
 
-		String timetracktitle = ExceldataFramework.getdata(filepath, "entertimetrack", 1, 0);
+		String licensetitle = ExceldataFramework.getdata(filepath, "Licenses", 1, 0);
 
-		Reporter.log("testing:" + timetracktitle, true);
+		Reporter.log("testing:" + licensetitle, true);
 
 		LoginPage lp = new LoginPage(driver);
 
-		EnterTimetrackPage ep = new EnterTimetrackPage(driver);
+		LicensesPage ep = new LicensesPage(driver);
 
 		lp.verifytitle(logintitle);
 
@@ -38,7 +38,7 @@ public class validLoginLogoutTest extends BaseTest {
 
 		lp.clickonlogin();
 
-		lp.verifytitle(timetracktitle);
+		lp.verifytitle(licensetitle);
 
 		ep.clickavatar();
 		ep.clicklogout();

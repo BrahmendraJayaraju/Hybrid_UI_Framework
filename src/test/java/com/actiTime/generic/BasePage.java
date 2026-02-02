@@ -28,7 +28,7 @@ public class BasePage {
 
 		} catch (Exception e) {
 			Reporter.log("title is not matching", true);
-			Reporter.log("actual title is " + driver.getTitle() + "expected titlr is " + etitle);
+			Reporter.log("actual title is : " + driver.getTitle() + " expected titlr is : " + etitle);
 
 			Assert.fail();
 		}

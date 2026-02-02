@@ -18,16 +18,16 @@ public abstract class BaseTest implements AutoConstant {
 	@BeforeMethod
 	public void precondition() {
 
-	    System.setProperty("webdriver.chrome.driver",
-	            "/Users/brahmendrajayaraju/Downloads/actitimeUI-main/Actitimec/driver/chromedriver");
+	    System.setProperty(
+	            "webdriver.chrome.driver",
+	            "/Users/brahmendrajayaraju/Downloads/actitimeUI-main/Actitimec/driver/chromedriver"
+	    );
 
 	    ChromeOptions options = new ChromeOptions();
 
-	    // HEADLESS so browser does not launch UI
-	    options.addArguments("--headless=new");   // 👈 add this line
-	    options.addArguments("--window-size=1920,1080");
+	 
 
-	    // Performance & stability options
+
 	    options.addArguments("--disable-background-networking");
 	    options.addArguments("--disable-background-timer-throttling");
 	    options.addArguments("--disable-renderer-backgrounding");
@@ -42,6 +42,8 @@ public abstract class BaseTest implements AutoConstant {
 	    options.addArguments("--disable-infobars");
 	    options.addArguments("--no-first-run");
 	    options.addArguments("--start-maximized");
+
+	    // macOS compatibility
 	    options.addArguments("--remote-allow-origins=*");
 
 	    driver = new ChromeDriver(options);
