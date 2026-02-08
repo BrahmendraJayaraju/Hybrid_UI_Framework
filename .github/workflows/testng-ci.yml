@@ -49,17 +49,17 @@ jobs:
             exit 1
           }
 
-      # Install matching ChromeDriver automatically
+   
       - name: Install ChromeDriver
         uses: nanasess/setup-chromedriver@v1
         with:
           chrome-version: latest
 
-      # Execute TestNG Tests
+
       - name: Execute TestNG Tests
         run: mvn clean test
 
-      # Upload TestNG Report
+
       - name: Upload TestNG Report
         if: always()
         uses: actions/upload-artifact@v4
