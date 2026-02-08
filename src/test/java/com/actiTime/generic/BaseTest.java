@@ -25,9 +25,9 @@ public abstract class BaseTest implements AutoConstant {
 
 	    ChromeOptions options = new ChromeOptions();
 
-	    //options.addArguments("--headless=new"); // Use "--headless" for older versions
-	    //options.addArguments("--disable-gpu"); 
-	   // options.addArguments("--window-size=1920,1080"); 
+	    options.addArguments("--headless=new"); // Use "--headless" for older versions
+	    options.addArguments("--disable-gpu"); 
+	    options.addArguments("--window-size=1920,1080"); 
 
 
 
