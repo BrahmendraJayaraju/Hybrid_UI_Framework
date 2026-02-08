@@ -20,19 +20,26 @@ public abstract class BaseTest implements AutoConstant {
         String os = System.getProperty("os.name").toLowerCase();
         ChromeOptions options = new ChromeOptions();
 
-        if (os.contains("mac")) {
-            // Local Mac
+        boolean isCI = System.getenv("GITHUB_ACTIONS") != null; // true on GitHub Actions
+
+        if (os.contains("mac") && !isCI) {
+            // Local Mac GUI
             System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver");
             options.addArguments("--start-maximized");
-        } else if (os.contains("win")) {
-            // Windows CI
-            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
-            options.addArguments("--start-maximized");
+        } else {
+            // Windows CI (or any non-Mac CI)
+            WebDriverManager.chromedriver().setup();
+            options.addArguments("--headless");              // run headless in CI
+            options.addArguments("--no-sandbox");            // Linux/Windows sandbox fix
+            options.addArguments("--disable-dev-shm-usage"); // memory fix
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1080");
         }
 
         driver = new ChromeDriver(options);
         driver.get("https://online.actitime.com/udel/login.do");
     }
+
 
     @AfterMethod
     public void postcondition(ITestResult res) throws IOException {
