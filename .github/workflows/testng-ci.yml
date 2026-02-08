@@ -37,13 +37,17 @@ jobs:
       - name: Install Chrome
         run: choco install googlechrome -y
 
-		# Check Chrome installation
-		- name: Check Chrome version
-		  shell: pwsh
-		  run: |
-		    & "C:\Program Files\Google\Chrome\Application\chrome.exe" --version
-
-
+      # Check Chrome installation
+      - name: Check Chrome version
+        shell: pwsh
+        run: |
+          $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+          if (Test-Path $chromePath) {
+            & $chromePath --version
+          } else {
+            Write-Host "Chrome not found!"
+            exit 1
+          }
 
       # Install matching ChromeDriver automatically
       - name: Install ChromeDriver
