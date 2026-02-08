@@ -14,35 +14,24 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public abstract class BaseTest implements AutoConstant {
 
     public WebDriver driver;
+
     @BeforeMethod
-    public void precondition() throws InterruptedException {
+    public void precondition() {
         String os = System.getProperty("os.name").toLowerCase();
         ChromeOptions options = new ChromeOptions();
 
         if (os.contains("mac")) {
+            // Mac local
             System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver");
             options.addArguments("--start-maximized");
-        } else {
-            // Linux CI
-            WebDriverManager.chromedriver().setup();
-            options.addArguments("--headless");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--disable-gpu");
-            options.addArguments("--window-size=1920,1080");
-            options.addArguments("--remote-allow-origins=*");
-
-            // Add a short delay after page load for CI
-            Thread.sleep(5000); // 2 seconds
+        } else if (os.contains("win")) {
+            // Windows CI
+            System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+            options.addArguments("--start-maximized");
         }
 
         driver = new ChromeDriver(options);
         driver.get("https://online.actitime.com/udel/login.do");
-
-        // Optional: another tiny wait to make sure login elements are present
-        if (!os.contains("mac")) {
-            Thread.sleep(5000);
-        }
     }
 
     @AfterMethod

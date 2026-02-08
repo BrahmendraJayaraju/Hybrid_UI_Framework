@@ -1,6 +1,5 @@
 name: TestNG Maven CI for Actitime Hybrid framework
 
-# Permissions needed to push to gh-pages
 permissions:
   contents: write
 
@@ -9,20 +8,18 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 10 * * *'   # Daily at 10 AM UTC
+    - cron: '0 10 * * *'
   workflow_dispatch:
 
 jobs:
   testng-tests:
     name: Run TestNG Automation
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-      # 1️⃣ Checkout the code
       - name: Checkout source code
         uses: actions/checkout@v4
 
-      # 2️⃣ Set up Java 17
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
@@ -36,18 +33,13 @@ jobs:
       - name: Verify Maven
         run: mvn -version
 
-      # 3️⃣ Install Chrome for Linux CI
+      # Install Chrome (Windows)
       - name: Install Chrome
-        if: runner.os != 'macOS'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+        run: choco install googlechrome -y
 
-      # 4️⃣ Execute TestNG Tests
       - name: Execute TestNG Tests
         run: mvn clean test
 
-      # 5️⃣ Upload TestNG report artifacts
       - name: Upload TestNG Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -58,22 +50,19 @@ jobs:
   publish-report:
     name: Publish TestNG Report to GitHub Pages
     needs: testng-tests
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     if: always()
 
     steps:
-      # 1️⃣ Checkout code (required for gh-pages push)
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Download the TestNG report from previous job
       - name: Download TestNG Report
         uses: actions/download-artifact@v4
         with:
           name: testng-report
           path: report
 
-      # 3️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
