@@ -1,9 +1,13 @@
 name: TestNG Maven CI for Actitime Hybrid framework architecture
 
+# Explicit permissions so workflow can push to gh-pages
+permissions:
+  contents: write
+
 on:
   push:
     branches:
-      - main   # change if needed
+      - main
   schedule:
     - cron: '0 10 * * *'   # Daily at 10 AM UTC
   workflow_dispatch:
@@ -47,6 +51,9 @@ jobs:
     if: always()
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Download TestNG Report
         uses: actions/download-artifact@v4
         with:
@@ -58,3 +65,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: report
+          # Create gh-pages branch if it doesn't exist
+          force_orphan: true
