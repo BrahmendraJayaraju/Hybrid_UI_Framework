@@ -21,12 +21,12 @@ public abstract class BaseTest implements AutoConstant {
         ChromeOptions options = new ChromeOptions();
 
         if (os.contains("mac")) {
-            // Mac local
+            // Local Mac
             System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver");
             options.addArguments("--start-maximized");
         } else if (os.contains("win")) {
             // Windows CI
-            System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
             options.addArguments("--start-maximized");
         }
 
