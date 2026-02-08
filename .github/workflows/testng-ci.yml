@@ -37,10 +37,13 @@ jobs:
       - name: Install Chrome
         run: choco install googlechrome -y
 
-      # Check Chrome installation
-      - name: Check Chrome version
-        shell: pwsh
-        run: '"C:\Program Files\Google\Chrome\Application\chrome.exe" --version'
+		# Check Chrome installation
+		- name: Check Chrome version
+		  shell: pwsh
+		  run: |
+		    & "C:\Program Files\Google\Chrome\Application\chrome.exe" --version
+
+
 
       # Install matching ChromeDriver automatically
       - name: Install ChromeDriver
