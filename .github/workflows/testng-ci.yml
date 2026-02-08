@@ -39,7 +39,8 @@ jobs:
 
       # Check Chrome installation
       - name: Check Chrome version
-        run: '"C:\Program Files\Google\Chrome\Application\chrome.exe" --version'
+        run: & '"C:\Program Files\Google\Chrome\Application\chrome.exe"' --version
+        shell: pwsh
 
       # Install matching ChromeDriver automatically
       - name: Install ChromeDriver
