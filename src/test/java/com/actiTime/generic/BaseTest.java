@@ -20,18 +20,18 @@ public abstract class BaseTest implements AutoConstant {
         String os = System.getProperty("os.name").toLowerCase();
         ChromeOptions options = new ChromeOptions();
 
-        boolean isCI = System.getenv("GITHUB_ACTIONS") != null; // true on GitHub Actions
+        boolean isCI = System.getenv("CI") != null || System.getenv("JENKINS_HOME") != null;
 
-        if (os.contains("mac") && !isCI) {
+        if (!isCI && os.contains("mac")) {
             // Local Mac GUI
             System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver");
             options.addArguments("--start-maximized");
         } else {
-            // Windows CI (or any non-Mac CI)
+            // CI or non-Mac: headless
             WebDriverManager.chromedriver().setup();
-            options.addArguments("--headless");              // run headless in CI
-            options.addArguments("--no-sandbox");            // Linux/Windows sandbox fix
-            options.addArguments("--disable-dev-shm-usage"); // memory fix
+            options.addArguments("--headless=new");    // Use new headless mode if Chrome>=109
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--disable-gpu");
             options.addArguments("--window-size=1920,1080");
         }
@@ -39,7 +39,6 @@ public abstract class BaseTest implements AutoConstant {
         driver = new ChromeDriver(options);
         driver.get("https://online.actitime.com/udel/login.do");
     }
-
 
     @AfterMethod
     public void postcondition(ITestResult res) throws IOException {
