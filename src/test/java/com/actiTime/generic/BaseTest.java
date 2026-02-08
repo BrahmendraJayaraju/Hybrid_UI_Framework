@@ -20,26 +20,26 @@ public abstract class BaseTest implements AutoConstant {
     public WebDriver driver;
 
     @BeforeMethod
-    public void precondition() throws IOException {
+    public void precondition() {
         ChromeOptions options = new ChromeOptions();
 
-        // Detect if running on GitHub Actions
         boolean isGitHubActions = System.getenv("GITHUB_ACTIONS") != null;
 
         if (isGitHubActions) {
-            WebDriverManager.chromedriver().setup();
-
-            options.addArguments("--headless=new"); // or just --headless
+            // Headless for GitHub Actions
+            // Specify ChromeDriver version explicitly to avoid NoSuchElementException
+            WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();
+            options.addArguments("--headless=new");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--disable-gpu");
-            options.addArguments("--window-size=1920,1080"); // ensures elements are visible
-            options.addArguments("--remote-allow-origins=*"); // sometimes required on new Chrome
+            options.addArguments("--window-size=1920,1080");
         } else {
             // Local Mac / local Jenkins → use GUI Chrome
             System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver");
             options.addArguments("--start-maximized");
         }
+
 
         driver = new ChromeDriver(options);
 
