@@ -5,8 +5,8 @@
     <classes>
       <class name="com.actiTime.tests.validLoginLogoutTest">
         <methods>
-          <include name="postcondition"/>
           <include name="precondition"/>
+          <include name="postcondition"/>
           <include name="testvalidloginlogout"/>
         </methods>
       </class> <!-- com.actiTime.tests.validLoginLogoutTest -->
