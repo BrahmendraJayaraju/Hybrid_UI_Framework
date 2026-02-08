@@ -14,7 +14,7 @@ on:
 jobs:
   testng-tests:
     name: Run TestNG Automation
-    runs-on: windows-latest
+    runs-on: windows-latest  # optional: switch to ubuntu-latest for faster CI
 
     steps:
       - name: Checkout source code
@@ -37,15 +37,19 @@ jobs:
       - name: Install Chrome
         run: choco install googlechrome -y
 
+      # Run TestNG tests
       - name: Execute TestNG Tests
         run: mvn clean test
 
-      - name: Upload TestNG Report
+      # Upload screenshots and TestNG report
+      - name: Upload Artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: testng-report
-          path: test-output
+          path: |
+            test-output
+            screenshots
 
   publish-report:
     name: Publish TestNG Report to GitHub Pages
@@ -67,5 +71,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: report
+          publish_dir: report/test-output
           force_orphan: true
