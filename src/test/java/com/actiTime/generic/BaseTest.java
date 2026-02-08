@@ -20,7 +20,7 @@ public abstract class BaseTest implements AutoConstant {
 
 	    System.setProperty(
 	            "webdriver.chrome.driver",
-	            "/Users/brahmendrajayaraju/Downloads/actitimeUI-main/Actitimec/driver/chromedriver"
+	            "./Driver/chromedriver"
 	    );
 
 	    ChromeOptions options = new ChromeOptions();
