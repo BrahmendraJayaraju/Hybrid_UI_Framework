@@ -1,4 +1,4 @@
-name: TestNG Maven CI for Actitime Hybrid framework
+name:TestNG Maven CI for Actitime App Hybrid framework
 
 permissions:
   contents: write
