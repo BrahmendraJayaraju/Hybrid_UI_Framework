@@ -39,8 +39,8 @@ jobs:
 
       # Check Chrome installation
       - name: Check Chrome version
-        run: & '"C:\Program Files\Google\Chrome\Application\chrome.exe"' --version
         shell: pwsh
+        run: '"C:\Program Files\Google\Chrome\Application\chrome.exe" --version'
 
       # Install matching ChromeDriver automatically
       - name: Install ChromeDriver
@@ -74,11 +74,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: testng-report
-          path: report
+          path: test-output
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: report
+          publish_dir: test-output
           force_orphan: true
