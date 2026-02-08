@@ -33,31 +33,31 @@ jobs:
       - name: Verify Maven
         run: mvn -version
 
-      # Install latest Chrome
+      # Install Google Chrome
       - name: Install Chrome
         run: choco install googlechrome -y
 
-      # Check Chrome version
+      # Check Chrome installation
       - name: Check Chrome version
-        run: google-chrome --version || echo "chrome not found"
+        run: '"C:\Program Files\Google\Chrome\Application\chrome.exe" --version'
 
-      # Install ChromeDriver (match installed Chrome version)
+      # Install matching ChromeDriver automatically
       - name: Install ChromeDriver
-        run: choco install chromedriver --version 116.0.5845.96 -y
+        uses: nanasess/setup-chromedriver@v1
+        with:
+          chrome-version: latest
 
       # Execute TestNG Tests
       - name: Execute TestNG Tests
         run: mvn clean test
 
-      # Upload TestNG reports + screenshots
-      - name: Upload Artifacts
+      # Upload TestNG Report
+      - name: Upload TestNG Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: testng-report
-          path: |
-            test-output
-            screenshots
+          path: test-output
 
   publish-report:
     name: Publish TestNG Report to GitHub Pages
@@ -79,5 +79,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: report/test-output
+          publish_dir: report
           force_orphan: true
