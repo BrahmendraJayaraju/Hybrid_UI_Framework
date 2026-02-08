@@ -26,7 +26,8 @@ public class LicensesPage extends BasePage {
 		avatar.click();
 	}
 
-	public void clicklogout() {
+	public void clicklogout() throws InterruptedException {
+		Thread.sleep(3000);
 		logoutbtn.click();
 	}
 

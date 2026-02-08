@@ -34,6 +34,11 @@ jobs:
       - name: Verify Maven
         run: mvn -version
 
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
       - name: Execute TestNG Tests
         run: mvn clean test
 
@@ -65,5 +70,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: report
-          # Create gh-pages branch if it doesn't exist
           force_orphan: true
