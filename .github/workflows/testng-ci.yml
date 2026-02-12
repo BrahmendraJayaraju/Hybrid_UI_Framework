@@ -34,8 +34,10 @@ jobs:
         run: mvn -version
 
       # Install Google Chrome
-      - name: Install Chrome
-        run: choco install googlechrome -y
+      - name: Download and install Google Chrome
+        run: |
+          curl -L -o chrome.msi https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi
+          msiexec /i chrome.msi /qn /norestart
 
       # Check Chrome installation
       - name: Check Chrome version
@@ -49,16 +51,13 @@ jobs:
             exit 1
           }
 
-   
       - name: Install ChromeDriver
         uses: nanasess/setup-chromedriver@v1
         with:
           chrome-version: latest
 
-
       - name: Execute TestNG Tests
         run: mvn clean test
-
 
       - name: Upload TestNG Report
         if: always()
