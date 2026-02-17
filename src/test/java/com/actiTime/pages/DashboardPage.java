@@ -7,27 +7,45 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.actiTime.generic.BasePage;
 
-public class LicensesPage extends BasePage {
+public class DashboardPage extends BasePage {
 
-	@FindBy(xpath= "(//div[@class='pages-navigation-Popups-ProfilePopup-buttonsGroup--dKHJND4D'])[1]")
+	@FindBy(xpath= "//li[@class='oxd-userdropdown']")
 	private WebElement avatar;
 
-	@FindBy(xpath = "//div[.='Logout']")
+	@FindBy(xpath = "//a[.='Logout']")
 	private WebElement logoutbtn;
+	
+	
+	@FindBy(xpath = "//h6[.='Dashboard']")
+	private WebElement dashelement;
+	
+	
+	
+	
 
-	public LicensesPage(WebDriver driver) {
+	public DashboardPage(WebDriver driver) {
 		super(driver);
 
 		PageFactory.initElements(driver, this);
 
 	}
+	
+	public void verifydashboardtext(String dashboardtitle)
+	
+	{
+		verifyText(dashelement,dashboardtitle);
+	}
+	
+	
+
 
 	public void clickavatar() {
+		Veriftelemnt(avatar);
 		avatar.click();
 	}
 
 	public void clicklogout() throws InterruptedException {
-		Thread.sleep(3000);
+		
 		logoutbtn.click();
 	}
 

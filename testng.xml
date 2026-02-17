@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <packages>
-      <package name="com.actiTime.tests"/>
-     
-    </packages>
+  <test name="Test" thread-count="5">
+    <classes>
+      
+      <class name="com.actiTime.tests.invalidloginTest"/>
+      <class name="com.actiTime.tests.validLoginLogoutTest"/>
+      <class name="com.actiTime.tests.verifyLogouttest"/>  
+    </classes>
   </test>
 </suite>
+

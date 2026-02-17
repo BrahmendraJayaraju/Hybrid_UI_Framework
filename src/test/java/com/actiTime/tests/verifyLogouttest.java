@@ -1,49 +1,49 @@
 package com.actiTime.tests;
 
-import org.testng.Reporter;
+
 import org.testng.annotations.Test;
 
 import com.actiTime.generic.BaseTest;
 import getdata.ExceldataFramework;
+
 import com.actiTime.pages.DashboardPage;
 import com.actiTime.pages.LoginPage;
 
-public class validLoginLogoutTest extends BaseTest {
+public class verifyLogouttest extends BaseTest {
 
 	@Test
-	public void testvalidloginlogout() throws Exception {
-
-		String logintitle = ExceldataFramework.getdata(filepath, "Login", 1, 2);
-
+	public void testverifylogout() throws Exception {
+		
 		String user = ExceldataFramework.getdata(filepath, "Login", 1, 0);
 
 		String pass = ExceldataFramework.getdata(filepath, "Login", 1, 1);
+		
+		String logintext = ExceldataFramework.getdata(filepath, "Login", 1, 3);
 
-		String dashboardtitle = ExceldataFramework.getdata(filepath, "Dashboard", 1, 0);
+		
+		String logintitle = ExceldataFramework.getdata(filepath, "Login", 1, 2);
 
-		Reporter.log("testing:" + dashboardtitle, true);
-
-		LoginPage lp = new LoginPage(driver);
+	
 
 		DashboardPage ep = new DashboardPage(driver);
-
-		lp.verifytitle(logintitle);
-
-		Reporter.log("user name is:" + user, true);
-
+		LoginPage lp = new LoginPage(driver);
+		
 		lp.enterusername(user);
-
-		Reporter.log("user pass is:" + pass, true);
 		lp.enterpassword(pass);
-
 		lp.clickonlogin();
-
-		ep.verifydashboardtext(dashboardtitle);
-
 		ep.clickavatar();
 		ep.clicklogout();
 
 		lp.verifytitle(logintitle);
 
+
+	
+		
+		lp.verifylogintext(logintext);
+
+		
+
+	
 	}
+
 }

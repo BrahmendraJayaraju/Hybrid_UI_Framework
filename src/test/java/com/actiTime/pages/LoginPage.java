@@ -9,19 +9,22 @@ import com.actiTime.generic.BasePage;
 
 public class LoginPage extends BasePage {
 
-	@FindBy(name = "username")
+	@FindBy(xpath = "//input[@name='username']")
 	private WebElement usernameTb;
 
-	@FindBy(name = "pwd")
+	@FindBy(xpath = "//input[@name='password']")
 	private WebElement passwordTb;
 
-	@FindBy(xpath = "//div[.='Login ']")
+	@FindBy(xpath = "//button[.=' Login ']")
 	private WebElement loginbtn;
 
-	@FindBy(xpath = "//nobr[.='actiTIME 2026']")
-	private WebElement version;
+	
+	@FindBy(xpath = "//h5[.='Login']")
+	private WebElement loginelement;
+	
+	
 
-	@FindBy(xpath = "//span[.='Username or Password is invalid. Please try again.']")
+	@FindBy(xpath = "//p[.='Invalid credentials']")
 	private WebElement errmsg;
 
 	public LoginPage(WebDriver driver) {
@@ -30,19 +33,28 @@ public class LoginPage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void enterusername(String un) {
+	public void enterusername(String un)  {
+		
+		Veriftelemnt(usernameTb);
+	
 		usernameTb.sendKeys(un);
 	}
 
 	public void enterpassword(String pw) {
+		
+		Veriftelemnt(passwordTb);
+	
 		passwordTb.sendKeys(pw);
 	}
 
 	public void clickonlogin() {
+		Veriftelemnt(loginbtn);
 		loginbtn.click();
 	}
 
-	public void verifytitle(String etitle) {
+	public void verifytitle(String etitle)
+	{
+		
 		verifytitlepageclass(etitle);
 
 	}
@@ -54,13 +66,13 @@ public class LoginPage extends BasePage {
 		return actualerrmeg;
 
 	}
-
-	public String verifyeversion() {
-
-		String aversion = version.getText();
-
-		return aversion;
-
+	
+public void verifylogintext(String logtext)
+	
+	{
+		verifyText(loginelement,logtext);
 	}
+
+
 
 }

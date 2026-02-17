@@ -66,7 +66,7 @@ public class ExceldataFramework {
 				XSSFWorkbook wb = new XSSFWorkbook(f1);
 
 				// get sheet
-				XSSFSheet sh = wb.getSheet("Sheet1");
+				XSSFSheet sh = wb.getSheet(Sheetname);
 
 				// get row
 
@@ -96,7 +96,7 @@ public class ExceldataFramework {
 				XSSFWorkbook wb = new XSSFWorkbook(f1);
 
 				// get sheet
-				XSSFSheet sh = wb.getSheet("Sheet1");
+				XSSFSheet sh = wb.getSheet(Sheetname);
 
 				// get row
 				XSSFRow r = sh.getRow(0);

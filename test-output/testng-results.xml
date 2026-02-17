@@ -5,7 +5,88 @@
       <![CDATA[title is matching]]>
     </line>
     <line>
-      <![CDATA[version matching:actiTIME 2026]]>
+      <![CDATA[username:edtrte]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[password:ettete]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[username:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[password:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[username:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[password:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[err message is matching Invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[testing:Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[title is matching]]>
+    </line>
+    <line>
+      <![CDATA[user name is:Admin]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[user pass is:admin123]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[Actual text   : Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Expected text : Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
     </line>
     <line>
       <![CDATA[title is matching]]>
@@ -14,90 +95,117 @@
       <![CDATA[element is present]]>
     </line>
     <line>
-      <![CDATA[err message is matching Username or Password is invalid. Please try again.]]>
+      <![CDATA[element is present]]>
     </line>
     <line>
-      <![CDATA[testing:actiTIME - Licenses]]>
+      <![CDATA[element is present]]>
     </line>
     <line>
-      <![CDATA[title is matching]]>
-    </line>
-    <line>
-      <![CDATA[user name is:brahmendra.jayaraju67@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[user pass is:9886603727]]>
+      <![CDATA[element is present]]>
     </line>
     <line>
       <![CDATA[title is matching]]>
     </line>
     <line>
-      <![CDATA[title is matching]]>
+      <![CDATA[Actual text   : Login]]>
+    </line>
+    <line>
+      <![CDATA[Expected text : Login]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-02-12T01:19:56 GMT-05:00" name="Suite" finished-at="2026-02-12T01:20:16 GMT-05:00" duration-ms="19817">
+  <suite started-at="2026-02-16T23:49:40 GMT-05:00" name="Suite" finished-at="2026-02-16T23:50:24 GMT-05:00" duration-ms="43991">
     <groups>
     </groups>
-    <test started-at="2026-02-12T01:19:56 GMT-05:00" name="Test" finished-at="2026-02-12T01:20:16 GMT-05:00" duration-ms="19817">
-      <class name="com.actiTime.tests.verifyversiontest">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.actiTime.tests.verifyversiontest@63475ace]" started-at="2026-02-12T01:19:56 GMT-05:00" name="precondition" finished-at="2026-02-12T01:20:00 GMT-05:00" duration-ms="3708" status="PASS">
+    <test started-at="2026-02-16T23:49:40 GMT-05:00" name="Test" finished-at="2026-02-16T23:50:24 GMT-05:00" duration-ms="43991">
+      <class name="com.actiTime.tests.verifyLogouttest">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.actiTime.tests.verifyLogouttest@6a2f6f80]" started-at="2026-02-16T23:50:09 GMT-05:00" name="precondition" finished-at="2026-02-16T23:50:11 GMT-05:00" duration-ms="2381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="testverifyversion()[pri:0, instance:com.actiTime.tests.verifyversiontest@63475ace]" started-at="2026-02-12T01:20:00 GMT-05:00" name="testverifyversion" finished-at="2026-02-12T01:20:00 GMT-05:00" duration-ms="652" status="PASS">
+        <test-method signature="testverifylogout()[pri:0, instance:com.actiTime.tests.verifyLogouttest@6a2f6f80]" started-at="2026-02-16T23:50:11 GMT-05:00" name="testverifylogout" finished-at="2026-02-16T23:50:24 GMT-05:00" duration-ms="12732" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
             <line>
               <![CDATA[title is matching]]>
             </line>
             <line>
-              <![CDATA[version matching:actiTIME 2026]]>
+              <![CDATA[Actual text   : Login]]>
+            </line>
+            <line>
+              <![CDATA[Expected text : Login]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testverifyversion -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.actiTime.tests.verifyversiontest@63475ace]" started-at="2026-02-12T01:20:00 GMT-05:00" name="postcondition" finished-at="2026-02-12T01:20:00 GMT-05:00" duration-ms="122" status="PASS">
+        </test-method> <!-- testverifylogout -->
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.actiTime.tests.verifyLogouttest@6a2f6f80]" started-at="2026-02-16T23:50:24 GMT-05:00" name="postcondition" finished-at="2026-02-16T23:50:24 GMT-05:00" duration-ms="103" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testverifyversion status=SUCCESS method=verifyversiontest.testverifyversion()[pri:0, instance:com.actiTime.tests.verifyversiontest@63475ace] output=title is matching]]]>
+                <![CDATA[[TestResult name=testverifylogout status=SUCCESS method=verifyLogouttest.testverifylogout()[pri:0, instance:com.actiTime.tests.verifyLogouttest@6a2f6f80] output=element is present]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postcondition -->
-      </class> <!-- com.actiTime.tests.verifyversiontest -->
+      </class> <!-- com.actiTime.tests.verifyLogouttest -->
       <class name="com.actiTime.tests.validLoginLogoutTest">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@2d2ffcb7]" started-at="2026-02-12T01:20:07 GMT-05:00" name="precondition" finished-at="2026-02-12T01:20:10 GMT-05:00" duration-ms="2632" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@1190200a]" started-at="2026-02-16T23:49:59 GMT-05:00" name="precondition" finished-at="2026-02-16T23:50:01 GMT-05:00" duration-ms="2174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="testvalidloginlogout()[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@2d2ffcb7]" started-at="2026-02-12T01:20:10 GMT-05:00" name="testvalidloginlogout" finished-at="2026-02-12T01:20:16 GMT-05:00" duration-ms="5989" status="PASS">
+        <test-method signature="testvalidloginlogout()[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@1190200a]" started-at="2026-02-16T23:50:01 GMT-05:00" name="testvalidloginlogout" finished-at="2026-02-16T23:50:09 GMT-05:00" duration-ms="7736" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[testing:actiTIME - Licenses]]>
+              <![CDATA[testing:Dashboard]]>
             </line>
             <line>
               <![CDATA[title is matching]]>
             </line>
             <line>
-              <![CDATA[user name is:brahmendra.jayaraju67@gmail.com]]>
+              <![CDATA[user name is:Admin]]>
             </line>
             <line>
-              <![CDATA[user pass is:9886603727]]>
+              <![CDATA[element is present]]>
             </line>
             <line>
-              <![CDATA[title is matching]]>
+              <![CDATA[user pass is:admin123]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[Actual text   : Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Expected text : Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
             </line>
             <line>
               <![CDATA[title is matching]]>
             </line>
           </reporter-output>
         </test-method> <!-- testvalidloginlogout -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@2d2ffcb7]" started-at="2026-02-12T01:20:16 GMT-05:00" name="postcondition" finished-at="2026-02-12T01:20:16 GMT-05:00" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@1190200a]" started-at="2026-02-16T23:50:09 GMT-05:00" name="postcondition" finished-at="2026-02-16T23:50:09 GMT-05:00" duration-ms="97" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testvalidloginlogout status=SUCCESS method=validLoginLogoutTest.testvalidloginlogout()[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@2d2ffcb7] output=testing:actiTIME - Licenses]]]>
+                <![CDATA[[TestResult name=testvalidloginlogout status=SUCCESS method=validLoginLogoutTest.testvalidloginlogout()[pri:0, instance:com.actiTime.tests.validLoginLogoutTest@1190200a] output=testing:Dashboard]]]>
               </value>
             </param>
           </params>
@@ -106,28 +214,76 @@
         </test-method> <!-- postcondition -->
       </class> <!-- com.actiTime.tests.validLoginLogoutTest -->
       <class name="com.actiTime.tests.invalidloginTest">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.actiTime.tests.invalidloginTest@291b4bf5]" started-at="2026-02-12T01:20:00 GMT-05:00" name="precondition" finished-at="2026-02-12T01:20:04 GMT-05:00" duration-ms="3083" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.actiTime.tests.invalidloginTest@1ff4931d]" started-at="2026-02-16T23:49:40 GMT-05:00" name="precondition" finished-at="2026-02-16T23:49:47 GMT-05:00" duration-ms="6507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="testinvalidlogin()[pri:0, instance:com.actiTime.tests.invalidloginTest@291b4bf5]" started-at="2026-02-12T01:20:04 GMT-05:00" name="testinvalidlogin" finished-at="2026-02-12T01:20:07 GMT-05:00" duration-ms="3309" status="PASS">
+        <test-method signature="testinvalidlogin()[pri:0, instance:com.actiTime.tests.invalidloginTest@1ff4931d]" started-at="2026-02-16T23:49:47 GMT-05:00" name="testinvalidlogin" finished-at="2026-02-16T23:49:59 GMT-05:00" duration-ms="12129" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[title is matching]]>
             </line>
             <line>
+              <![CDATA[username:edtrte]]>
+            </line>
+            <line>
               <![CDATA[element is present]]>
             </line>
             <line>
-              <![CDATA[err message is matching Username or Password is invalid. Please try again.]]>
+              <![CDATA[password:ettete]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[username:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[password:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[username:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[password:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[err message is matching Invalid credentials]]>
             </line>
           </reporter-output>
         </test-method> <!-- testinvalidlogin -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.actiTime.tests.invalidloginTest@291b4bf5]" started-at="2026-02-12T01:20:07 GMT-05:00" name="postcondition" finished-at="2026-02-12T01:20:07 GMT-05:00" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.actiTime.tests.invalidloginTest@1ff4931d]" started-at="2026-02-16T23:49:59 GMT-05:00" name="postcondition" finished-at="2026-02-16T23:49:59 GMT-05:00" duration-ms="107" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testinvalidlogin status=SUCCESS method=invalidloginTest.testinvalidlogin()[pri:0, instance:com.actiTime.tests.invalidloginTest@291b4bf5] output=title is matching]]]>
+                <![CDATA[[TestResult name=testinvalidlogin status=SUCCESS method=invalidloginTest.testinvalidlogin()[pri:0, instance:com.actiTime.tests.invalidloginTest@1ff4931d] output=title is matching]]]>
               </value>
             </param>
           </params>

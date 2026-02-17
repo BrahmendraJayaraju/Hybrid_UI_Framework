@@ -38,7 +38,7 @@ public abstract class BaseTest implements AutoConstant {
 
         driver = new ChromeDriver(options);
 
-        driver.get("https://online.actitime.com/udel/login.do");
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
     
       

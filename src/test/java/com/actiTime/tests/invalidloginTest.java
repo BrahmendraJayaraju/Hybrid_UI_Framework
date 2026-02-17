@@ -34,7 +34,9 @@ public class invalidloginTest extends BaseTest {
 			lp.enterusername(user);
 
 			Reporter.log("password:" + pass, true);
-			lp.enterusername(pass);
+			lp.enterpassword(pass);
+			
+			lp.clickonlogin();
 		}
 
 		lp.clickonlogin();

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.actiTime.tests.verifyversiontest">
+      <class name="com.actiTime.tests.verifyLogouttest">
         <methods>
-          <include name="postcondition"/>
           <include name="precondition"/>
-          <include name="testverifyversion"/>
+          <include name="postcondition"/>
+          <include name="testverifylogout"/>
         </methods>
-      </class> <!-- com.actiTime.tests.verifyversiontest -->
+      </class> <!-- com.actiTime.tests.verifyLogouttest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
