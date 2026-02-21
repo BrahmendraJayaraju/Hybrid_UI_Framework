@@ -1,4 +1,4 @@
-package com.actiTime.generic;
+package com.orangeHRM.generic;
 
 import java.io.File;
 import java.io.IOException;

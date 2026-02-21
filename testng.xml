@@ -5,9 +5,9 @@
   <test name="Test" thread-count="5">
     <classes>
       
-      <class name="com.actiTime.tests.invalidloginTest"/>
-      <class name="com.actiTime.tests.validLoginLogoutTest"/>
-      <class name="com.actiTime.tests.verifyLogouttest"/>  
+      <class name="com.orangeHRM.tests.invalidloginTest"/>
+      <class name="com.orangeHRM.tests.validLoginLogoutTest"/>
+      <class name="com.orangeHRM.tests.verifyLogoutTest"/>  
     </classes>
   </test>
 </suite>

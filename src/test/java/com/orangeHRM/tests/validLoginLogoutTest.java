@@ -1,25 +1,26 @@
-package com.actiTime.tests;
+package com.orangeHRM.tests;
 
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.actiTime.generic.BaseTest;
-import getdata.ExceldataFramework;
-import com.actiTime.pages.DashboardPage;
-import com.actiTime.pages.LoginPage;
+import getdata.Exceldata;
+
+import com.orangeHRM.generic.BaseTest;
+import com.orangeHRM.pages.DashboardPage;
+import com.orangeHRM.pages.LoginPage;
 
 public class validLoginLogoutTest extends BaseTest {
 
 	@Test
 	public void testvalidloginlogout() throws Exception {
 
-		String logintitle = ExceldataFramework.getdata(filepath, "Login", 1, 2);
+		String logintitle = Exceldata.getdata(filepath, "Login", 1, 2);
 
-		String user = ExceldataFramework.getdata(filepath, "Login", 1, 0);
+		String user = Exceldata.getdata(filepath, "Login", 1, 0);
 
-		String pass = ExceldataFramework.getdata(filepath, "Login", 1, 1);
+		String pass = Exceldata.getdata(filepath, "Login", 1, 1);
 
-		String dashboardtitle = ExceldataFramework.getdata(filepath, "Dashboard", 1, 0);
+		String dashboardtitle = Exceldata.getdata(filepath, "Dashboard", 1, 0);
 
 		Reporter.log("testing:" + dashboardtitle, true);
 

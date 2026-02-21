@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.actiTime.tests.verifyLogouttest">
+      <class name="com.orangeHRM.tests.verifyLogoutTest">
         <methods>
           <include name="precondition"/>
           <include name="postcondition"/>
           <include name="testverifylogout"/>
         </methods>
-      </class> <!-- com.actiTime.tests.verifyLogouttest -->
+      </class> <!-- com.orangeHRM.tests.verifyLogoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
