@@ -4,7 +4,6 @@
 <suite name="Suite">
   <test name="Test" thread-count="5">
     <classes>
-      
       <class name="com.orangeHRM.tests.invalidloginTest"/>
       <class name="com.orangeHRM.tests.validLoginLogoutTest"/>
       <class name="com.orangeHRM.tests.verifyLogoutTest"/>  
