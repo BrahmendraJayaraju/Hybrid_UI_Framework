@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[title is matching]]>
+    </line>
+    <line>
+      <![CDATA[username:edtrte]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[password:ettete]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[username:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[password:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[username:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[password:dsds]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[testing:Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[title is matching]]>
+    </line>
+    <line>
+      <![CDATA[user name is:Admin]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[user pass is:admin123]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[title is matching]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+    <line>
+      <![CDATA[title is matching]]>
+    </line>
+    <line>
+      <![CDATA[element is present]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-04-28T13:25:12 GMT-04:00" name="Suite" finished-at="2026-04-28T13:26:03 GMT-04:00" duration-ms="51184">
+    <groups>
+    </groups>
+    <test started-at="2026-04-28T13:25:12 GMT-04:00" name="Test" finished-at="2026-04-28T13:26:03 GMT-04:00" duration-ms="51184">
+      <class name="com.orangeHRM.tests.invalidloginTest">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-04-28T13:25:12 GMT-04:00" name="precondition" finished-at="2026-04-28T13:25:18 GMT-04:00" duration-ms="6529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="testinvalidlogin()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-04-28T13:25:18 GMT-04:00" name="testinvalidlogin" finished-at="2026-04-28T13:25:27 GMT-04:00" duration-ms="9315" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[title is matching]]>
+            </line>
+            <line>
+              <![CDATA[username:edtrte]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[password:ettete]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[username:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[password:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[username:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[password:dsds]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testinvalidlogin -->
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-04-28T13:25:27 GMT-04:00" name="postcondition" finished-at="2026-04-28T13:25:28 GMT-04:00" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testinvalidlogin status=SUCCESS method=invalidloginTest.testinvalidlogin()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d] output=title is matching]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- com.orangeHRM.tests.invalidloginTest -->
+      <class name="com.orangeHRM.tests.verifyLogoutTest">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-04-28T13:25:43 GMT-04:00" name="precondition" finished-at="2026-04-28T13:25:47 GMT-04:00" duration-ms="4308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="testverifylogout()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-04-28T13:25:47 GMT-04:00" name="testverifylogout" finished-at="2026-04-28T13:26:03 GMT-04:00" duration-ms="15359" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[title is matching]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testverifylogout -->
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-04-28T13:26:03 GMT-04:00" name="postcondition" finished-at="2026-04-28T13:26:03 GMT-04:00" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testverifylogout status=SUCCESS method=verifyLogoutTest.testverifylogout()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80] output=element is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- com.orangeHRM.tests.verifyLogoutTest -->
+      <class name="com.orangeHRM.tests.validLoginLogoutTest">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-04-28T13:25:28 GMT-04:00" name="precondition" finished-at="2026-04-28T13:25:31 GMT-04:00" duration-ms="3834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="testvalidloginlogout()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-04-28T13:25:31 GMT-04:00" name="testvalidloginlogout" finished-at="2026-04-28T13:25:43 GMT-04:00" duration-ms="11473" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[testing:Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[title is matching]]>
+            </line>
+            <line>
+              <![CDATA[user name is:Admin]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[user pass is:admin123]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[element is present]]>
+            </line>
+            <line>
+              <![CDATA[title is matching]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testvalidloginlogout -->
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-04-28T13:25:43 GMT-04:00" name="postcondition" finished-at="2026-04-28T13:25:43 GMT-04:00" duration-ms="106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testvalidloginlogout status=SUCCESS method=validLoginLogoutTest.testvalidloginlogout()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a] output=testing:Dashboard]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- com.orangeHRM.tests.validLoginLogoutTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
